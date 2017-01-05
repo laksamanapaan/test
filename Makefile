@@ -45,8 +45,9 @@
 
 CC=g++
 CFLAGS=-Wall -g -O3
-PEAdapterFinder: main.o main.o.d Input.o Input.o.d CS.o CS.o.d NW.o NW.o.d
+PEAdapterFinder.o: main.o Input.o CS.o NW.o
+
 clean:
-	rm -f PEAdapterFinder main.o Input.o Input.o.d CS.o CS.o.d NW.o NW.o.d
+	rm -f PEAdapterFinder main.o Input.o CS.o NW.o
 
 
